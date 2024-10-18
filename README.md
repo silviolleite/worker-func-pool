@@ -6,6 +6,8 @@
 
 This package provides a worker pool to functions.
 
+See [example](/example).
+
 ### Install
 
 ---
