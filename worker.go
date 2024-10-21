@@ -18,6 +18,7 @@ type worker struct {
 func (w *worker) start() {
 	go func() {
 		mustStop := false
+
 		for t := range w.taskQueue {
 			data, err := t.fn()
 			if err != nil && t.blockingError {
